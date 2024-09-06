@@ -96,7 +96,7 @@ const Service = () => {
           variants={titleVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="text-center text-2xl font-bold text-gray-300"
+          className="text-center text-2xl font-bold text-gray-300 pt-5"
         >
           {t("service.title")}
         </motion.h1>

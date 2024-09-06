@@ -12,7 +12,7 @@ i18n
       en: { translation: translationEN },
       hi: { translation: translationHI }
     },
-    fallbackLng: 'en',  // default language
+    fallbackLng: 'hi',  // default language
     interpolation: {
       escapeValue: false, // React already escapes by default
     },

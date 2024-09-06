@@ -32,7 +32,7 @@ const footerIcons = [
 ];
 
 const Footer = () => {
-  const [selectedLanguage, setSelectedLanguage] = useState("English");
+  const [selectedLanguage, setSelectedLanguage] = useState("Hindi");
   const [subscribed, setSubscribed] = useState("");
   const handleLanguageChange = (language) => {
     setSelectedLanguage(language);

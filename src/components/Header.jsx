@@ -236,7 +236,7 @@ import LanguageDropdown from "./LanguageDropdown";
 import toast from "react-hot-toast";
 
 const Header = () => {
-  const [selectedLanguage, setSelectedLanguage] = useState("English");
+  const [selectedLanguage, setSelectedLanguage] = useState("Hindi");
   const [isSticky, setIsSticky] = useState(false);
 
   const handleLanguageChange = (language) => {
