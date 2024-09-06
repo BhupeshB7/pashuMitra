@@ -1,0 +1,38 @@
+{
+  "header": {
+    "welcome": "Welcome",
+    "about": "About",
+    "contact": "Contact",
+    "login": "Login",
+    "service": "Service"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  },
+  "home": {
+    "title": "A veterinary doctor trained in AI from Patna is now working in a rural village. Using advanced technology, he is improving animal care. His expertise in AI enhances diagnostics and management, leading to healthier livestock and better farming practices for local communities."
+  },
+  "about": {
+    "title": "About Us",
+    "content": "We provide the best services."
+  },
+  "service": {
+    "title": "Welcome to",
+    "subTitle": "Pashu Mitra",
+    "description": "At our village veterinary clinic, we combine modern technology with compassionate care for all your animals, from cows and buffaloes to dogs and cats. Our clinic is dedicated to providing personalized and caring service. Whether your animals need routine check-ups, vaccinations, or special medical treatment, we are here for you. We also offer farmhouse visits to ensure that even your larger or more remote animals receive the best care possible. Your animals' health and happiness are our top priorities. Trust us to provide the expert care they deserve!",
+    "vaccination": "Regular vaccinations are essential to protect cows, buffaloes, dogs, and cats from common diseases. Our vaccination service ensures your animals stay healthy by providing timely vaccinations against diseases such as foot-and-mouth disease, rabies, and more.For: Cows, Buffaloes, Dogs, Cats",
+    "treatment": "We offer comprehensive medical treatment for sick or injured animals. Whether it’s a minor illness or a severe condition, our veterinary expert provides the necessary care, medications, and treatment plans to ensure a full recovery.For: Cows, Buffaloes, Dogs, Cats",
+    "emergency": "In case of emergencies, we offer rapid-response services to treat critical health issues. Whether it’s a birthing complication, injury, or a sudden illness, our emergency service ensures timely care to save your animals.For: Cows, Buffaloes, Dogs, CatsThese services will ensure the well-being of animals and give villagers easy access to professional veterinary care."
+  },
+    "serviceItem": {
+      "heading":"Our Services",
+      "title": "Surgery",
+      "description": "We offer a range of surgeries for pets, from small operations to more complex procedures. Our skilled veterinarians use the latest tools and techniques to ensure the best care and recovery for your animal.",
+      "title2": "Diagnostics",
+      "description2": "Finding the right problem is important for treating your pet. We provide various tests and scans to quickly and accurately diagnose any health issues your animal may have, using the latest equipment.",
+      "title3": "Pain Management",
+      "description3": "Managing pain is essential for your pet’s well-being. We create custom plans to help ease your pet’s pain using medicines, therapies, and lifestyle changes, so they can feel better and stay active.",
+      "title4": "Orthopedic",
+      "description4": "Our orthopedic services help diagnose and treat bone, joint, and muscle problems in animals. Whether it’s a broken bone or joint pain, our specialists provide the care needed to improve your pet’s mobility and comfort."
+    }  
+  }
