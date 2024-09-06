@@ -2,7 +2,7 @@ import React from "react";
 import toast from "react-hot-toast";
 import c2 from "../assets/abg2.png";
 
-const AppointmentForm = ({ onClose }) => {
+const AppointmentForm = () => {
   const [formData, setFormData] = React.useState({
     name: "",
     dueDate: "",
@@ -46,7 +46,9 @@ const AppointmentForm = ({ onClose }) => {
   };
 
   return (
-    <div className="relative flex items-center justify-center max-w-[100%] md:max-w-[90%] mx-auto my-12">
+    <>
+    <h6 className="text-2xl md:text-3xl text-green-400 text-center font-semibold ">Book an Appointment</h6>
+    <div id="appointment" className="relative flex items-center justify-center max-w-[100%] md:max-w-[90%] mx-auto my-12">
       <img src={c2} alt="Animal" className="absolute inset-0 w-full h-full object-cover rounded-2xl z-0 opacity-30" />
       <div className="relative flex flex-col items-center justify-center m-3 p-8 bg-gray-950 opacity-80 min-w-[95%] lg:min-w-[50%] rounded-lg shadow-lg z-10">
         <h1 className="text-2xl font-bold text-white mb-6">Appointment Form</h1>
@@ -92,6 +94,7 @@ const AppointmentForm = ({ onClose }) => {
         </form>
       </div>
     </div>
+    </>
   );
 };
 
