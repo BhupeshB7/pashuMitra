@@ -33,7 +33,7 @@ const footerIcons = [
 
 const Footer = () => {
   const [subscribed, setSubscribed] = useState("");
-  const [selectedLanguage, setSelectedLanguage] = useState("Hindi");
+  const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem("selectedLanguage") || "English");
 
   useEffect(() => {
     const storedLanguage = localStorage.getItem("selectedLanguage");

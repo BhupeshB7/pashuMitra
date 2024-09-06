@@ -2,11 +2,12 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import './App.css'
-import './i18n'
+import { LanguageProvider } from "./context/LanguageContext.jsx";
 import { Toaster } from "react-hot-toast";
+import './i18n.js'
 const App = () => {
   return (
-    <>
+    <LanguageProvider>
     <Toaster 
       position="bottom-right"
       reverseOrder={false}
@@ -27,7 +28,7 @@ const App = () => {
           <Route path="/service" element={<h1>Service</h1>} />
         </Routes>
       </Router>
-    </>
+    </LanguageProvider>
   );
 };
 

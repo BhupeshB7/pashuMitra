@@ -237,7 +237,7 @@ import toast from "react-hot-toast";
 
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState("Hindi");
+  const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem("selectedLanguage") || "English");
 
   useEffect(() => {
     const storedLanguage = localStorage.getItem("selectedLanguage");
