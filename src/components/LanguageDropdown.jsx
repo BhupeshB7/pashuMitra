@@ -1,6 +1,4 @@
-// src/components/LanguageDropdown.js
-
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 const LanguageDropdown = ({ selectedLanguage, onLanguageChange }) => {
@@ -12,6 +10,7 @@ const LanguageDropdown = ({ selectedLanguage, onLanguageChange }) => {
   const handleLanguageChange = (language) => {
     const langCode = language === "Hindi" ? "hi" : "en";
     i18n.changeLanguage(langCode);
+    localStorage.setItem("selectedLanguage", language); // Store language in localStorage
     onLanguageChange(language);
   };
 

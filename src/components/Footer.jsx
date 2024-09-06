@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import {
   FaTwitter,
   FaInstagram,
@@ -32,8 +32,16 @@ const footerIcons = [
 ];
 
 const Footer = () => {
-  const [selectedLanguage, setSelectedLanguage] = useState("Hindi");
   const [subscribed, setSubscribed] = useState("");
+  const [selectedLanguage, setSelectedLanguage] = useState("Hindi");
+
+  useEffect(() => {
+    const storedLanguage = localStorage.getItem("selectedLanguage");
+    if (storedLanguage) {
+      setSelectedLanguage(storedLanguage);
+    }
+  }, []);
+
   const handleLanguageChange = (language) => {
     setSelectedLanguage(language);
   };
