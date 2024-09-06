@@ -46,9 +46,9 @@ const AppointmentForm = ({ onClose }) => {
   };
 
   return (
-    <div className="relative flex items-center justify-center max-w-[90%] mx-auto my-12">
+    <div className="relative flex items-center justify-center max-w-[100%] md:max-w-[90%] mx-auto my-12">
       <img src={c2} alt="Animal" className="absolute inset-0 w-full h-full object-cover rounded-2xl z-0 opacity-30" />
-      <div className="relative flex flex-col items-center justify-center m-3 p-8 bg-gray-950 min-w-[95%] lg:min-w-[50%] rounded-lg shadow-lg z-10">
+      <div className="relative flex flex-col items-center justify-center m-3 p-8 bg-gray-950 opacity-80 min-w-[95%] lg:min-w-[50%] rounded-lg shadow-lg z-10">
         <h1 className="text-2xl font-bold text-white mb-6">Appointment Form</h1>
         <form className="w-full max-w-xl  py-2 rounded-lg" onSubmit={handleSubmit}>
           <div className="grid grid-cols-1 gap-2">
@@ -59,7 +59,7 @@ const AppointmentForm = ({ onClose }) => {
                 </label>
                 {field !== 'description' ? (
                   <input
-                    className={`shadow border rounded w-full py-2 px-3 bg-gray-700 text-gray-200 ${errors[field] ? 'border-red-500' : ''}`}
+                    className={`shadow border border-gray-600 rounded w-full py-2 px-3 bg-gray-800 text-gray-200 ${errors[field] ? 'border-red-500' : ''}`}
                     id={field}
                     type={field === 'email' ? 'email' : field === 'mobile' ? 'tel' : 'text'}
                     placeholder={field.charAt(0).toUpperCase() + field.slice(1)}
@@ -68,7 +68,7 @@ const AppointmentForm = ({ onClose }) => {
                   />
                 ) : (
                   <textarea
-                    className={`shadow border rounded w-full py-2 px-3 bg-gray-700 text-gray-200 ${errors[field] ? 'border-red-500' : ''}`}
+                    className={`shadow border border-gray-600 rounded w-full py-2 px-3 bg-gray-800 text-gray-200 ${errors[field] ? 'border-red-500' : ''}`}
                     id={field}
                     placeholder="Describe the issue"
                     value={formData[field]}
