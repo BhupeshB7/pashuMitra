@@ -34,5 +34,16 @@
       "description3": "Managing pain is essential for your pet’s well-being. We create custom plans to help ease your pet’s pain using medicines, therapies, and lifestyle changes, so they can feel better and stay active.",
       "title4": "Orthopedic",
       "description4": "Our orthopedic services help diagnose and treat bone, joint, and muscle problems in animals. Whether it’s a broken bone or joint pain, our specialists provide the care needed to improve your pet’s mobility and comfort."
+    },
+    "appointmentForm":{
+      "title":"Book an appointment",
+      "name":"Name",
+      "email":"Email",
+      "mobile":"Mobile",
+      "petName":"Pet name",
+      "date":"Appointment Date",
+      "timeSlot":"Time Slot",
+      "description":"Description",
+      "submit":"Submit"
     }  
   }

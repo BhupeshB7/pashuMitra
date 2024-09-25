@@ -237,7 +237,7 @@ import toast from "react-hot-toast";
 
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem("selectedLanguage") || "English");
+  const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem("selectedLanguage") || "Hindi");
 
   useEffect(() => {
     const storedLanguage = localStorage.getItem("selectedLanguage");
@@ -271,7 +271,7 @@ const Header = () => {
       <header className="bg-gray-900 text-[#baffc8] z-auto">
         <div className="container mx-auto flex items-center justify-between p-4">
           {/* Logo */}
-          <div className="pl-6">
+          <div className="pl-1 md:pl-6 ">
             <Link to="/">
               <img src={logo} alt="logo" className="w-28 h-12" />
             </Link>

@@ -13,17 +13,14 @@ import LanguageDropdown from "./LanguageDropdown";
 import toast from "react-hot-toast";
 
 const footerIcons = [
-  {
-    icon: <FaLinkedin />,
-    link: "https://www.linkedin.com/in/bhupesh-kumar-35011224b",
-  },
+ 
   {
     icon: <FaEnvelope />,
     link: "mailto:lalbabu7520@gmail.com",
   },
   {
     icon: <FaInstagram />,
-    link: "https://www.instagram.com/bhupeshb7?igsh=ODVvMWd0bmQ0ZG10",
+    link: "https://www.instagram.com/its_me_lalbabu7520?igsh=ZzBmcnduaGQ5NDl5",
   },
   {
     icon: <FaWhatsapp />,
@@ -33,7 +30,7 @@ const footerIcons = [
 
 const Footer = () => {
   const [subscribed, setSubscribed] = useState("");
-  const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem("selectedLanguage") || "English");
+  const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem("selectedLanguage") || "Hindi");
 
   useEffect(() => {
     const storedLanguage = localStorage.getItem("selectedLanguage");
@@ -100,7 +97,7 @@ const Footer = () => {
                 <a
                   key={index}
                   href={item.link}
-                  className="text-gray-400 text-xl"
+                  className="text-gray-400 text-2xl hover:text-green-400"
                   onClick={() => handleIconClick(item.link)}
                 >
                   {item.icon}

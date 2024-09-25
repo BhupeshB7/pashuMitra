@@ -3,6 +3,8 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import translationEN from './locales/en/translation.json';
 import translationHI from './locales/hi/translation.json';
+import translationMA from './locales/ma/translation.json';  // Maithili translations
+import translationBP from './locales/bp/translation.json';  // Bhojpuri translations
 
 i18n
   .use(LanguageDetector)
@@ -10,11 +12,13 @@ i18n
   .init({
     resources: {
       en: { translation: translationEN },
-      hi: { translation: translationHI }
+      hi: { translation: translationHI },
+      ma: { translation: translationMA }, // Maithili
+      bp: { translation: translationBP }, // Bhojpuri
     },
-    fallbackLng: 'hi',  // default language
+    fallbackLng: 'hi',  // Fallback language
     interpolation: {
-      escapeValue: false, // React already escapes by default
+      escapeValue: false, 
     },
     detection: {
       order: ['querystring', 'cookie'],
